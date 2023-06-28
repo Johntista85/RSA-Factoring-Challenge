@@ -1,3 +1,4 @@
+@@ -0,0 +1,33 @@
 #include "factor.h"
 
 /**
@@ -12,7 +13,8 @@ int main(int argc, char *argv[])
 	FILE *fptr;
 	size_t count;
 	ssize_t line;
-	char *bufer = NULL;
+	char *buffer = NULL;
+
 
 	if (argc != 2)
 	{
@@ -25,9 +27,9 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Error: can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
-	while((line = getline(&bufer, &count, fptr)) != -1)
+	while((line = getline(&buffer, &count, fptr)) != -1)
 	{
-		factorize(bufer);
+		factorize(buffer);
 	}
 	return (0);
 }

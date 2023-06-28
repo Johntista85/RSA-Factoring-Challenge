@@ -1,3 +1,4 @@
+@@ -0,0 +1,33 @@
 #include "factor.h"
 
 /**
@@ -13,6 +14,7 @@ int main(int argc, char *argv[])
 	size_t count;
 	ssize_t line;
 	char *buffer = NULL;
+
 
 	if (argc != 2)
 	{
